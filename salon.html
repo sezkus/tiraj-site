@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tiraj · Salon</title>
+<meta name="description" content="Tiraj ile basılmış işlerden her ay seçilen bir sergi.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&family=Instrument+Serif:ital@1&family=Space+Mono&display=swap">
+<style>
+  :root { --wall:#FBFBF9; --ink:#0E0E0E; --caption:#6F6F6B; --hair:#E6E5E1; --dot:#E5322D; --card:#FDFCF9; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--wall); color:var(--ink); font:16px/1.6 "Instrument Sans", system-ui, sans-serif; }
+  main { max-width:1040px; margin:0 auto; padding:56px 20px 80px; }
+  .wm { font-weight:600; letter-spacing:.06em; font-size:14px; }
+  .wm a { text-decoration:none; }
+  .eyebrow { font:12px/1.4 "Space Mono", ui-monospace, monospace; text-transform:uppercase; letter-spacing:.08em; color:var(--caption); margin-top:40px; }
+  h1 { font:italic 400 clamp(48px, 9vw, 88px)/1 "Instrument Serif", serif; margin:10px 0 18px; }
+  .lede { max-width:600px; font-size:18px; color:#2a2a2a; }
+  h2 { font-size:17px; margin:0 0 8px; }
+  p { color:#2a2a2a; }
+  a { color:inherit; }
+  hr { border:0; border-top:1px solid var(--hair); margin:56px 0; }
+
+  /* The hang */
+  .hang { display:grid; grid-template-columns:repeat(auto-fill, minmax(280px, 1fr)); gap:56px 40px; margin-top:48px; }
+  figure { margin:0; }
+  figure img { width:100%; height:auto; display:block; box-shadow:0 1px 1px rgba(0,0,0,.08), 0 14px 28px rgba(0,0,0,.14); background:#eee; }
+  figcaption { margin-top:18px; display:flex; gap:12px; align-items:flex-end; }
+  figcaption .who { font-weight:600; font-size:14px; }
+  figcaption .title { font:italic 400 22px/1.15 "Instrument Serif", serif; }
+  figcaption .line { font:11px/1.5 "Space Mono", ui-monospace, monospace; color:var(--caption); text-transform:uppercase; letter-spacing:.04em; margin-top:4px; }
+  figcaption .dot { width:9px; height:9px; border-radius:50%; background:var(--dot); flex:none; margin-bottom:6px; margin-left:auto; }
+
+  /* The open call: an empty wall with its label */
+  .call { margin-top:48px; display:grid; grid-template-columns:minmax(0,420px) minmax(0,360px); gap:40px; align-items:end; }
+  .sample img { width:100%; height:auto; display:block; box-shadow:0 14px 28px rgba(0,0,0,.12); }
+  .sample figcaption { font:11px "Space Mono", monospace; color:var(--caption); text-transform:uppercase; letter-spacing:.06em; margin-top:12px; }
+  .label { background:var(--card); padding:22px 24px; box-shadow:0 2px 10px rgba(0,0,0,.08); }
+  .label .title { font:italic 400 30px/1.1 "Instrument Serif", serif; margin:2px 0 10px; }
+  .label .foot { border-top:1px solid var(--hair); margin-top:14px; padding-top:12px; display:flex; justify-content:space-between; align-items:center; font:12px "Space Mono", monospace; color:var(--caption); letter-spacing:.04em; }
+  .label .foot i { width:9px; height:9px; border-radius:50%; background:var(--dot); display:inline-block; }
+
+  ol.steps { padding-left:20px; }
+  ol.steps li { margin-bottom:10px; color:#2a2a2a; }
+  .tag { font-family:"Space Mono", monospace; background:#F0EFEA; padding:1px 6px; }
+  .lang { color:var(--caption); font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+  @media (max-width:720px) { .call { grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<main>
+  <div class="wm"><a href="destek.html">TIRAJ</a></div>
+  <div class="eyebrow" id="season">Salon</div>
+  <h1>Salon</h1>
+  <p class="lede">Her ay, Tiraj ile basılmış işlerden bir seçki duvara asılır. Linol, gravür, risograf, siyanotip: hangi teknikle bastıysan, işin burada künyesiyle sergilenebilir.</p>
+
+  <div id="wall"></div>
+
+  <hr>
+  <h2>Salon'a nasıl katılırsın?</h2>
+  <ol class="steps">
+    <li>Stüdyoda paylaş simgesine dokun ve <b>Paylaşım görseli</b>'ni hazırla. Görsel, işini duvarda, yanında künyesiyle gösterir.</li>
+    <li>Instagram'da <span class="tag">#tirajsalon</span> etiketiyle paylaş ya da görseli <a href="mailto:hello.scannerstudio@gmail.com?subject=Salon">hello.scannerstudio@gmail.com</a> adresine “Salon” konusuyla gönder. Adını ya da imzanı ve işin adını yaz.</li>
+    <li>Seçilen işlerin sahiplerine sergiden önce yazarız. İşin, senin onayınla ve adınla asılır.</li>
+  </ol>
+  <p>Asılmış bir işi istediğin zaman kaldırtabilirsin: aynı adrese yazman yeter. İşin hakları her zaman sende kalır.</p>
+
+  <hr>
+  <div class="lang">English</div>
+  <h2>The Salon</h2>
+  <p>Each month a selection of prints made with Tiraj goes up on this wall, each with its label. To take part, make the <b>Share image</b> in the studio and post it on Instagram with <span class="tag">#tirajsalon</span>, or email it to <a href="mailto:hello.scannerstudio@gmail.com?subject=Salon">hello.scannerstudio@gmail.com</a> with the subject “Salon”. We write to every artist before hanging their work, and hang it only with their consent and under their name. Ask us any time to take a work down; your rights in it stay yours.</p>
+  <div class="lang" style="margin-top:28px">Français</div>
+  <h2>Le Salon</h2>
+  <p>Chaque mois, une sélection d'épreuves tirées avec Tiraj est accrochée ici, avec son cartel. Pour participer, préparez l'<b>image à partager</b> dans l'atelier et publiez-la sur Instagram avec <span class="tag">#tirajsalon</span>, ou envoyez-la à <a href="mailto:hello.scannerstudio@gmail.com?subject=Salon">hello.scannerstudio@gmail.com</a> avec l'objet « Salon ». Nous écrivons à chaque artiste avant l'accrochage, qui se fait avec son accord et sous son nom. Vous pouvez demander le décrochage à tout moment ; vos droits restent les vôtres.</p>
+  <p style="margin-top:40px"><a href="destek.html">Destek</a> · <a href="gizlilik.html">Gizlilik</a></p>
+</main>
+<script>
+(function () {
+  var wall = document.getElementById('wall');
+  function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text) e.textContent = text; return e; }
+  function openCall(data) {
+    var box = el('div', 'call');
+    var sample = el('figure', 'sample'); var img = el('img'); img.src = 'salon/ornek.jpg'; img.alt = 'Duvarda çerçeveli bir linol baskı ve yanında eser etiketi';
+    sample.appendChild(img); sample.appendChild(el('figcaption', '', 'Paylaşım görseli: işin duvarda, künyesiyle')); box.appendChild(sample);
+    var label = el('div', 'label');
+    label.appendChild(el('div', 'eyebrow', 'Açık çağrı')).style.marginTop = '0';
+    label.appendChild(el('div', 'title', (data && data.salon || 'Salon I') + ', ' + (data && data.season || '')));
+    label.appendChild(el('p', '', 'İlk seçki için işler toplanıyor. Bastığın işi etiketle paylaş, duvara birlikte asalım.'));
+    var foot = el('div', 'foot'); foot.appendChild(el('span', '', 'TIRAJ  ·  ' + (data && data.tag || '#tirajsalon'))); foot.appendChild(el('i'));
+    label.appendChild(foot);
+    box.appendChild(label);
+    wall.appendChild(box);
+  }
+  function hang(data) {
+    var grid = el('div', 'hang');
+    data.works.forEach(function (w) {
+      var f = el('figure');
+      var img = el('img'); img.src = w.image; img.alt = (w.title || '') + (w.artist ? ', ' + w.artist : ''); img.loading = 'lazy';
+      if (w.url) { var a = el('a'); a.href = w.url; a.rel = 'noopener'; a.appendChild(img); f.appendChild(a); } else f.appendChild(img);
+      var cap = el('figcaption'); var t = el('div');
+      if (w.artist) t.appendChild(el('div', 'who', w.artist));
+      t.appendChild(el('div', 'title', w.title || ''));
+      t.appendChild(el('div', 'line', [w.technique, w.edition, w.handle].filter(Boolean).join(' · ')));
+      cap.appendChild(t); cap.appendChild(el('span', 'dot'));
+      f.appendChild(cap); grid.appendChild(f);
+    });
+    wall.appendChild(grid);
+  }
+  fetch('salon.json', { cache: 'no-cache' }).then(function (r) { return r.json(); }).then(function (data) {
+    document.getElementById('season').textContent = data.salon + ' · ' + data.season;
+    if (data.works && data.works.length) hang(data); else openCall(data);
+  }).catch(function () { openCall(null); });
+})();
+</script>
+</body>
+</html>
