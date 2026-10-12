@@ -1,4 +1,143 @@
 <!doctype html>
-<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tiraj</title><meta http-equiv="refresh" content="0; url=destek.html"></head>
-<body style="background:#FBFBF9;font-family:system-ui"><p><a href="destek.html">Destek</a> · <a href="gizlilik.html">Gizlilik</a></p></body></html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tiraj · Fotoğrafın, numaralı bir baskı</title>
+<meta name="description" content="Tiraj fotoğrafını on bir baskı tekniğinden biriyle basar: linol, gravür, risograf, siyanotip ve fazlası. iPhone ve iPad için.">
+<meta property="og:title" content="Tiraj · Fotoğrafın, numaralı bir baskı">
+<meta property="og:description" content="Linol, gravür, risograf, siyanotip ve fazlası: on bir baskı tekniği, iPhone ve iPad için.">
+<meta property="og:image" content="https://sezkus.github.io/tiraj-site/img/duvar.jpg">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&family=Instrument+Serif:ital@0;1&family=Space+Mono&display=swap">
+<style>
+  :root { --wall:#FBFBF9; --ink:#0E0E0E; --caption:#6F6F6B; --hair:#E6E5E1; --dot:#E5322D; --card:#FDFCF9; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--wall); color:var(--ink); font:16px/1.6 "Instrument Sans", system-ui, sans-serif; }
+  main { max-width:1080px; margin:0 auto; padding:48px 20px 72px; }
+  a { color:inherit; }
+  nav { display:flex; justify-content:space-between; align-items:center; gap:16px; }
+  .wm { font-weight:600; letter-spacing:.08em; font-size:15px; text-decoration:none; }
+  nav .links { display:flex; gap:20px; font-size:14px; }
+  nav .links a { text-decoration:none; color:var(--caption); }
+  nav .links a:hover { color:var(--ink); }
+  .eyebrow { font:12px/1.4 "Space Mono", ui-monospace, monospace; text-transform:uppercase; letter-spacing:.08em; color:var(--caption); }
+  .hero { margin-top:72px; max-width:760px; }
+  h1 { font:italic 400 clamp(52px, 8.5vw, 96px)/.98 "Instrument Serif", serif; margin:14px 0 22px; }
+  .lede { max-width:540px; font-size:19px; color:#2a2a2a; margin:0; }
+  .store { display:inline-flex; align-items:center; gap:10px; margin-top:30px; padding:12px 20px; border-radius:999px; background:var(--ink); color:var(--wall); font-weight:600; font-size:15px; text-decoration:none; }
+  .store i { width:9px; height:9px; border-radius:50%; background:var(--dot); }
+  .note { margin-top:12px; font-size:13px; color:var(--caption); }
+  .wide { width:100%; display:block; margin-top:56px; aspect-ratio:16/8; object-fit:cover; }
+  hr { border:0; border-top:1px solid var(--hair); margin:80px 0 40px; }
+  h2 { font:italic 400 clamp(34px, 5vw, 48px)/1.05 "Instrument Serif", serif; margin:10px 0 14px; }
+  .section-lede { max-width:620px; color:#2a2a2a; margin:0; }
+
+  .screens { margin-top:36px; display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:20px; }
+  .screens figure { margin:0; }
+  .screens img { width:100%; display:block; border-radius:18px; box-shadow:0 12px 28px rgba(0,0,0,.12); }
+
+  .techs { margin-top:36px; display:grid; grid-template-columns:repeat(auto-fill, minmax(190px, 1fr)); gap:12px; }
+  .tech { display:flex; align-items:center; gap:12px; padding:12px; border:1px solid var(--hair); border-radius:14px; background:var(--card); }
+  .tech img { width:44px; height:44px; border-radius:11px; flex:none; }
+  .tech b { display:block; font-weight:600; font-size:15px; line-height:1.2; }
+  .tech span { font-size:13px; color:var(--caption); }
+  .free { font:10px "Space Mono", monospace; text-transform:uppercase; letter-spacing:.06em; color:var(--dot); }
+
+  .cols { margin-top:36px; display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:32px; }
+  .cols h3 { font-size:17px; margin:0 0 6px; }
+  .cols p { margin:0; color:#2a2a2a; }
+
+  .salon { display:flex; justify-content:space-between; align-items:center; gap:24px; padding:28px; background:var(--card); box-shadow:0 2px 10px rgba(0,0,0,.07); text-decoration:none; }
+  .salon .t { font:italic 400 34px/1.1 "Instrument Serif", serif; }
+  .salon .s { color:var(--caption); margin-top:4px; }
+  .salon .go { display:flex; align-items:center; gap:14px; font:12px "Space Mono", monospace; letter-spacing:.06em; text-transform:uppercase; }
+  .salon .go i { width:9px; height:9px; border-radius:50%; background:var(--dot); }
+
+  .en { color:#2a2a2a; max-width:680px; }
+  footer { margin-top:64px; padding-top:20px; border-top:1px solid var(--hair); display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; font:12px "Space Mono", monospace; color:var(--caption); letter-spacing:.04em; }
+  footer a { text-decoration:none; }
+  footer .links { display:flex; flex-wrap:wrap; gap:10px 18px; }
+
+  @media (max-width:820px) {
+    .hero { margin-top:48px; }
+    .wide { aspect-ratio:4/3; margin-top:36px; }
+    .screens { grid-template-columns:repeat(2, minmax(0,1fr)); }
+    .cols { grid-template-columns:1fr; gap:22px; }
+    .salon { flex-direction:column; align-items:flex-start; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <nav>
+    <a class="wm" href="./">TIRAJ</a>
+    <div class="links"><a href="salon.html">Salon</a><a href="destek.html">Destek</a><a href="gizlilik.html">Gizlilik</a></div>
+  </nav>
+
+  <section class="hero">
+    <div>
+      <div class="eyebrow">Atölye · iPhone ve iPad</div>
+      <h1>Fotoğrafın, numaralı bir baskı.</h1>
+      <p class="lede">Tiraj fotoğrafını on bir baskı tekniğinden biriyle basar. Kalıbı hazırla, mürekkeple, presi çevir, kâğıdı kaldır. Her baskı biraz farklı çıkar; künyesi yazılır, imzalanır ve edisyona girer.</p>
+      <span class="store"><i></i>App Store'da yakında</span>
+      <div class="note">Linol, risograf ve siyanotip ücretsiz. On bir tekniğin hepsi Atelier'de.</div>
+    </div>
+  </section>
+  <img class="wide" src="img/duvar.jpg" alt="Bir oturma odası duvarında çerçeveli siyanotip, linol ve risograf baskılar">
+
+  <hr>
+  <div class="eyebrow">Atölyede</div>
+  <h2>Vizörden duvara.</h2>
+  <p class="section-lede">Kamerada baskıyı canlı gör, presin başına geç, sonra paspartu ve çerçeveyle duvarda nasıl duracağına bak.</p>
+  <div class="screens">
+    <figure><img src="img/02-cam.jpg" alt="Vizörde canlı risograf baskı" loading="lazy"></figure>
+    <figure><img src="img/03-press.jpg" alt="Elle baskı: mürekkep, pres, kâğıt" loading="lazy"></figure>
+    <figure><img src="img/05-studio.jpg" alt="Stüdyo: paspartu ve çerçeve" loading="lazy"></figure>
+    <figure><img src="img/06-sechoir.jpg" alt="Kurutma ipindeki baskılar" loading="lazy"></figure>
+  </div>
+
+  <hr>
+  <div class="eyebrow">11 teknik</div>
+  <h2>Her tekniğin kendi izi.</h2>
+  <p class="section-lede">Linolün oyulmuş çizgisi, gravürün kalınlaşan hattı, risografın üst üste binen mürekkepleri, siyanotipin Prusya mavisi. Her teknik kendi kalıbını, mürekkebini ve kâğıdını getirir.</p>
+  <div class="techs">
+    <div class="tech"><img src="img/teknik/linocut.png" alt=""><div><b>Linogravure</b><span>Linol</span> <span class="free">· ücretsiz</span></div></div>
+    <div class="tech"><img src="img/teknik/risograph.png" alt=""><div><b>Risographie</b><span>Risograf</span> <span class="free">· ücretsiz</span></div></div>
+    <div class="tech"><img src="img/teknik/cyanotype.png" alt=""><div><b>Cyanotype</b><span>Siyanotip</span> <span class="free">· ücretsiz</span></div></div>
+    <div class="tech"><img src="img/teknik/screenprint.png" alt=""><div><b>Sérigraphie</b><span>Serigrafi</span></div></div>
+    <div class="tech"><img src="img/teknik/engraving.png" alt=""><div><b>Burin</b><span>Gravür</span></div></div>
+    <div class="tech"><img src="img/teknik/drypoint.png" alt=""><div><b>Pointe sèche</b><span>Kuru kazıma</span></div></div>
+    <div class="tech"><img src="img/teknik/aquatint.png" alt=""><div><b>Aquatinte</b><span>Akuatint</span></div></div>
+    <div class="tech"><img src="img/teknik/mezzotint.png" alt=""><div><b>Manière noire</b><span>Mezzotint</span></div></div>
+    <div class="tech"><img src="img/teknik/photogravure.png" alt=""><div><b>Héliogravure</b><span>Fotogravür</span></div></div>
+    <div class="tech"><img src="img/teknik/lithography.png" alt=""><div><b>Lithographie</b><span>Litografi</span></div></div>
+    <div class="tech"><img src="img/teknik/monotype.png" alt=""><div><b>Monotype</b><span>Monotip</span></div></div>
+  </div>
+
+  <hr>
+  <div class="eyebrow">Baskıya hazır</div>
+  <h2>Ekrandan kâğıda.</h2>
+  <div class="cols">
+    <div><h3>300 dpi dosyalar</h3><p>Kâğıt ölçüsünde, kesim işaretli PDF ve yüksek çözünürlüklü PNG. İstediğin atölyede bastır.</p></div>
+    <div><h3>Çerçeveci föyü</h3><p>Paspartu ve çerçeve ölçüleri, kesim listesiyle birlikte ikinci sayfada.</p></div>
+    <div><h3>Künye ve imza</h3><p>Edisyon numarası, başlık ve imza kurşun kalemle baskının altında; mühür köşede.</p></div>
+  </div>
+
+  <hr>
+  <a class="salon" href="salon.html">
+    <div><div class="t">Salon</div><div class="s">Her ay Tiraj ile basılmış işlerden bir seçki duvara asılır. Seninki de asılabilir.</div></div>
+    <div class="go"><i></i>Salon'a git →</div>
+  </a>
+
+  <hr>
+  <div class="eyebrow lang">English</div>
+  <h2>Your photo, as a numbered print.</h2>
+  <p class="en">Tiraj prints your photo in one of eleven printmaking techniques: linocut, engraving, risograph, cyanotype and more. Prepare the block, ink it, turn the press, lift the sheet. Every impression comes out a little different, and each one is titled, signed and numbered into its edition. Linocut, risograph and cyanotype are free; Atelier opens all eleven and print-ready 300 dpi files. Coming soon to the App Store for iPhone and iPad.</p>
+
+  <footer>
+    <span>© 2026 Sezer Kuşku</span>
+    <div class="links"><a href="salon.html">Salon</a><a href="destek.html">Destek · Support</a><a href="gizlilik.html">Gizlilik · Privacy</a><a href="mailto:hello.scannerstudio@gmail.com">hello.scannerstudio@gmail.com</a></div>
+  </footer>
+</main>
+</body>
+</html>
